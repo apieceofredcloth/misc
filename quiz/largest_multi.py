@@ -8,7 +8,7 @@ def largest_multi(num):
     if num in cached:
         return cached[num]
 
-    candidate = [max(current, current * largest_multi(num - current))
+    candidate = [max(current,current * largest_multi(num - current))
                  for current in range(1, num + 1)]
     max_ = max(candidate) if candidate else 0
     cached[num] = max_

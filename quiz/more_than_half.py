@@ -3,6 +3,9 @@ from pprint import pprint
 l = [5,6,5,89,5,56,5]
 l1 = [1, 0, 1]
 
+
+
+
 def more_than_half(seq):
     times = 0
     candidate = None
